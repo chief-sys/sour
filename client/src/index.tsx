@@ -428,7 +428,6 @@ function App() {
       ]
       ${renderDiscordButton(authState)}
       guibutton "options.."        "showgui options"
-      guibutton "about.."          "showgui about"
     ]
     `
     BananaBread.execute(menu)

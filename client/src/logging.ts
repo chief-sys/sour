@@ -44,7 +44,7 @@ export const colors = {
   error: (s: string): string => colors.red(s),
 }
 
-export const sour = (message: string) => `${colors.yellow('sour')} ${message}`
+export const sour = (message: string) => `${colors.yellow('zing')} ${message}`
 export const info = (message: string) =>
   BananaBread.conoutf(LogLevel.Info, sour(message))
 export const chat = (message: string) =>

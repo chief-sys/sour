@@ -258,6 +258,7 @@ jobs:
           name: sour-darwin
           path: ./sour-build/darwin
       - name: Create tap PR
+        if: github.repository == 'cfoust/sour'
         run: |
           # Remove last line from darwin formula
           sed '$d' ./sour-build/darwin/sour.rb | grep -v 'depends_on' > sour.rb
