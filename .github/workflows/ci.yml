@@ -203,16 +203,7 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
 
       - name: Install swig
-        run: |
-          brew install automake
-          cd /tmp
-          git clone https://github.com/swig/swig.git
-          cd swig
-          git checkout v4.1.1
-          ./autogen.sh
-          ./configure
-          make
-          sudo make install
+        run: brew install swig
 
       - name: Build
         uses: goreleaser/goreleaser-action@v5
